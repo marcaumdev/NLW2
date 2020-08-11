@@ -1,0 +1,100 @@
+ /*
+        CSS
+
+         Cascanding
+        Em cascata
+
+        StyleSheet
+        Folha de estilo 
+        :root = elemento raiz do html inteiro*/
+    :root {
+        /* variáveis css*/
+         --color-background: #F0F0F7;
+         --color-primary-lighter: #9871F5;
+         --color-primary-light: #916BEA;
+         --color-primary: #8257E5;
+         --color-primary-dark: #774DD6;
+         --color-primary-darker: #6842c2;
+         --color-secondary: #04D361;
+         --color-secondary-dark: #04BF58;
+         --color-title-in-primary: #FFFFFF;
+         --color-text-in-primary: #D4C2FF;
+         --color-text-title: #32264D;
+         --color-text-complement: #9C98A6;
+         --color-text-base: #6A6180;
+         --color-line-in-white: #E6E6F0;
+         --color-input-background: #F8F8FC;
+         --color-button-text:#FFFFFF;
+         --color-box-base: #FFFFFF;
+         --color-box-footer:#FAFAFC;
+         --color-small-info: #C1BCCC;
+
+         /*tamanho da font padrão: 15px (unidade de medida forte) -100% (relativo ao root) - 1rem (relativo ao root) */
+         font-size: 60% /* controle das medidas rem */
+        }
+        /*body{
+            background-color: var(--color-background); 
+            font-size: 100%;
+        }
+         var busca atributo atributo tem um valor(exadecimal, hsl, extenso e rgb)
+        h1 {
+            font-size: 3em;
+        }
+        h1 span{
+            font-size: 0.2rem;
+        } */
+        /* em do de cima rem do root
+        mobile first
+        responsividade*/
+         * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;/* content box calcula tamanho do conteudo*/
+        }
+        html,
+        body {
+            height: 100vh;
+        }
+         body{
+             background: var(--color-background);
+            display: flex;
+            align-items: center;
+            justify-content:center;
+         }   
+
+
+        body,
+        input,
+        button,
+        textarea {
+            /*font:500; 1.6rem Poppins;*/
+            font-weight: 500;
+            font-family: Poppins;
+            font-size: 1.6rem;
+            color: var(--color-text-base)
+
+        }
+        #container{ 
+            width: 90vw;
+            max-width: 700px;
+        } 
+        
+        @media (min-width: 700px) {
+            :root {
+                font-size:62.5%; /* todo 1rem vai ser relativo a 10px*/
+            }
+        }
+             /*box model
+            border: 1px solid red; borda
+            padding: 40px;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 100px; preenchimento
+            margin: 60px;  só um valor se refere aos 4 cantos
+             um se refere a cima e em baixo e o segundo aos lados
+            espaçamento
+            width: 300px;
+            height: 300px;
+
+        } display exibição*/
